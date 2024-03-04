@@ -1,0 +1,19 @@
+.container {
+    width: 84%;
+    margin: 0 auto;
+}
+.sections {
+    display: flex;
+    justify-content: space-between;
+}
+.sections_panel .active {
+ background-color: red;
+
+}
+.sections ul {
+    display: flex;
+    flex-direction: column;
+}
+.sections ul li {
+    cursor: pointer;
+}

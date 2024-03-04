@@ -1,0 +1,12 @@
+.container {
+    width: 84%;
+    margin: 0 auto;
+}
+.whous_bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.why_guys {
+    display: flex;
+    justify-content: space-between;
+}

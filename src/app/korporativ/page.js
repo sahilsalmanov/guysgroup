@@ -1,7 +1,78 @@
-import Image from "next/image";
+"use client"
+import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
+import "./corporativ.css"
+import { useState } from "react";
+
+
+
 
 export default function Home() {
-  return (
-    <h1>Korporativ</h1>
+
+  const [activeIndex, setActiveIndex] = useState(2); // Başlangıçta Xaricde tehsil'i aktif yapmak için 2'ye ayarladık
+
+  const handleClick = (index) => {
+      setActiveIndex(index);
+  };
+
+  
+  return ( 
+    <>
+     <div className="container">
+     <Header></Header>
+     <div className="sections">
+   <div className="sections_panel">
+   <ul>
+            <li className={activeIndex === 0 ? 'active' : 'non_active'} onClick={() => handleClick(0)}>SETEM</li>
+            <li className={activeIndex === 1 ? 'active' : 'non_active'} onClick={() => handleClick(1)}>Ingilis dili</li>
+            <li className={activeIndex === 2 ? 'active' : 'non_active'} onClick={() => handleClick(2)}>Ilkin IT</li>
+            <li className={activeIndex === 3 ? 'active' : 'non_active'} onClick={() => handleClick(3)}>Layihelerin yazilmasi</li>
+        </ul>
+        <button>Muraciet et</button>
+   </div>
+   <div className="sections_info">
+   {
+                (() => {
+                    if(activeIndex == 0) {
+                            return (
+                               <h1>SETEM</h1>
+                            )
+                        } else if (activeIndex == 1) {
+                            return (
+                           <h1>Ingilis dili</h1>
+                            )
+                        }
+                        else if (activeIndex == 2) {
+                          return (
+                          <h1>Ilkin IT</h1>
+                          )
+                      }
+                      else if (activeIndex == 3) {
+                        return (
+                       <h1>Layihelerin yazilmasi</h1>
+                        )
+                    }
+                  else {
+                            return (
+                                <p>Bye</p>
+                            )
+                        }
+                })()  
+            }  
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas iaculis enim eget sollicitudin finibus. Aliquam consequat, tortor sed mollis posuere, odio justo sagittis massa, sed eleifend enim diam eget erat. Sed et magna bibendum mauris lacinia facilisis sit amet id enim. Praesent enim felis, rhoncus eu lacinia vel, pellentesque nec odio. Donec accumsan massa dictum, convallis nisl quis, molestie libero. Donec id ante eu nisi rhoncus hendrerit in id turpis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas iaculis enim eget sollicitudin finibus. Aliquam consequat, tortor sed mollis posuere, odio justo sagittis massa, sed eleifend enim diam eget erat. Sed et magna bibendum mauris lacinia facilisis sit amet id enim. Praesent enim felis, rhoncus eu lacinia vel, pellentesque nec odio. Donec accumsan massa dictum, convallis nisl quis, molestie libero. Donec id ante eu nisi rhoncus hendrerit in id turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas iaculis enim eget sollicitudin finibus. Aliquam consequat, tortor sed mollis posuere, odio justo sagittis massa, sed eleifend enim diam eget erat. Sed et magna bibendum mauris lacinia facilisis sit amet id enim. Praesent enim felis, rhoncus eu lacinia vel, pellentesque nec odio. Donec accumsan massa dictum, convallis nisl quis, molestie libero. Donec id ante eu nisi rhoncus hendrerit in id turpis.</p>
+      <h2>Tedris formasi</h2>
+      <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas iaculis enim eget sollicitudin finibus. Aliquam consequat, tortor sed mollis posuere, odio justo sagittis massa, sed eleifend enim diam eget erat. Sed et magna bibendum mauris lacinia facilisis sit amet id enim. Praesent enim felis, rhoncus eu lacinia vel, pellentesque nec odio. Donec accumsan massa dictum, convallis nisl quis, molestie libero. Donec id ante eu nisi rhoncus hendrerit in id turpis.
+      </p>
+      <button>Tedris planini yukle</button>
+      <h2>Telimciler</h2>
+      <img src="logo.png"></img>
+      <img src="logo.png"></img>
+      <img src="logo.png"></img>
+   </div>
+     </div>
+     <Footer></Footer>
+     </div>
+    </>
   );
 }

@@ -1,0 +1,9 @@
+nav {
+    height: 90px;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+}
+ul {
+    display: flex;
+}

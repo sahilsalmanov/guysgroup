@@ -1,0 +1,100 @@
+.container {
+    width: 84%;
+    margin: 0 auto;
+}
+.about {
+    width: 50%;
+    background-color: blueviolet;
+    margin: 0 auto;
+}
+.training_container {
+    margin: 0 auto;
+    background-color: salmon;
+    margin-top: 30px;
+}
+.trainings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.train {
+    height: 404px;
+    width: 389px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+.services {
+    display: flex;
+    background-color: skyblue;
+    justify-content: space-between;
+}
+.left_services {
+  width: 377px;
+  background-color: darksalmon;
+}
+.right_services {
+    width: 794px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: seagreen;
+    justify-content: space-between;
+}
+.services_each {
+    width: 385px;
+    height: 176px;
+    border: 1px solid white;
+    background-color: darkblue;
+    margin-bottom: 20px;
+}
+.subscribe {
+    display: flex;
+    background-color: slategrey;
+    margin-top: 200px;
+    height: 240px;
+
+}
+.subscribe_left {
+    margin-right: 20px;
+    background-color: saddlebrown;
+}
+.subscribe_left img {
+   height: 240px;
+}
+.subscribe_right {
+    width: 508px;
+    height: 152px;
+    border: 1px solid white;
+    background-color: seagreen;
+    height: 240px;
+    
+}
+.news {
+    background-color: aqua;
+}
+.videonews {
+    margin-top: 100px;
+    display: flex;
+    height: 540px;
+    background-image: url(../../public/bluebackground.png);
+
+}
+.ornament {
+   position: relative;
+   bottom: 800px;
+}
+.question {
+    height: 300px;
+    background-color: saddlebrown;
+}
+.questions {
+    width: 60%;
+    background-color: seagreen;
+    margin: 0 auto;
+}
+.hidden {
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}

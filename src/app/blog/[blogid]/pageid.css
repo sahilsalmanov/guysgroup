@@ -1,0 +1,20 @@
+.container {
+    width: 84%;
+    margin: 0 auto;
+}
+.blog_section {
+    display: flex;
+    justify-content: space-between;
+}
+.blog_section_left {
+    width: 56%;
+    background-color: red;
+}
+.blog_section_right {
+    width:27%;
+    background-color: green;
+}
+.other_blog {
+    background-color: gray;
+    cursor: pointer;
+}

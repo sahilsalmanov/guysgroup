@@ -1,0 +1,13 @@
+.footer {
+    height: 300px;
+    margin: 0 auto;
+    background-color: brown;
+}
+.footer_top {
+    display: flex;
+    justify-content: space-around;
+    height: 250px;
+}
+.footer_row {
+    background-color: skyblue;
+}
