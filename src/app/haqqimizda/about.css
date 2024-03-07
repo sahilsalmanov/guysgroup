@@ -2,11 +2,27 @@
     width: 84%;
     margin: 0 auto;
 }
+.about {
+    display: flex;
+    justify-content:left;
+}
 .whous_bottom {
     display: flex;
     justify-content: space-between;
+    margin-top: 100px;
 }
 .why_guys {
     display: flex;
     justify-content: space-between;
+    margin-top: 100px;
+}
+.rectangle_about {
+    border-radius: 12px;
+    background-color: rgb(245,245,245);
+    width: 44%;
+    font-size: 16px;
+    padding: 20px;
+}
+.rectangle_about h1 {
+    color: orange;
 }

@@ -1,0 +1,15 @@
+{
+  "/_not-found": "app/_not-found.js",
+  "/blog/[blogid]/page": "app/blog/[blogid]/page.js",
+  "/blog/page": "app/blog/page.js",
+  "/elaqe/page": "app/elaqe/page.js",
+  "/haqqimizda/page": "app/haqqimizda/page.js",
+  "/korporativ/page": "app/korporativ/page.js",
+  "/page": "app/page.js",
+  "/telimlerimiz/page": "app/telimlerimiz/page.js",
+  "/vakansiyalar/[vakansiyaid]/page": "app/vakansiyalar/[vakansiyaid]/page.js",
+  "/vakansiyalar/page": "app/vakansiyalar/page.js",
+  "/xeberler/[newsid]/page": "app/xeberler/[newsid]/page.js",
+  "/xeberler/page": "app/xeberler/page.js",
+  "/xidmetlerimiz/page": "app/xidmetlerimiz/page.js"
+}

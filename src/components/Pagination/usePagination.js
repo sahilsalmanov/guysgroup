@@ -1,5 +1,4 @@
-"use client"
-
+/* eslint-disable */
 import { useMemo } from "react";
 
 const range = (start, end) => {
@@ -9,7 +8,9 @@ const range = (start, end) => {
       start value to end value.
     */
     return Array.from({ length }, (_, idx) => idx + start);
-  };
+};
+
+export const DOTS = "..."; // DOTS'u ihraç edin
 
 export const usePagination = ({
     totalCount,
@@ -57,7 +58,7 @@ export const usePagination = ({
         let leftItemCount = 3 + 2 * siblingCount;
         let leftRange = range(1, leftItemCount);
   
-        return [...leftRange, "...", totalPageCount];
+        return [...leftRange, DOTS, totalPageCount];
 
       }
   
@@ -71,7 +72,7 @@ export const usePagination = ({
           totalPageCount - rightItemCount + 1,
           totalPageCount
         );
-        return [firstPageIndex, "...", ...rightRange];
+        return [firstPageIndex, DOTS, ...rightRange];
       }
        
       /*
@@ -79,9 +80,9 @@ export const usePagination = ({
       */
       if (shouldShowLeftDots && shouldShowRightDots) {
         let middleRange = range(leftSiblingIndex, rightSiblingIndex);
-        return [firstPageIndex, "...", ...middleRange, "...", lastPageIndex];
+        return [firstPageIndex, DOTS, ...middleRange, DOTS, lastPageIndex];
       }
     }, [totalCount, pageSize, siblingCount, currentPage]);
   
     return paginationRange;
-  };
+};

@@ -1,4 +1,6 @@
 "use client"
+/* eslint-disable */
+
 import React from 'react';
 import classnames from 'classnames';
 import { usePagination, DOTS } from './usePagination';

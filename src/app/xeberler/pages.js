@@ -1,4 +1,6 @@
 "use client"
+/* eslint-disable */
+
 import React, { useState, useMemo } from 'react';
 import Pagination from '../../components/Pagination/Pagination';
 import data from './data.json';
@@ -20,12 +22,13 @@ export default function App() {
     <div className="news_section">
      {currentTableData.map((item, index) => {
             return (
+              <a key={index} href= {"xeberler/" + index}> 
             <div key={index} className = "news_card">
               <img src={item.img}></img>
              <p>{item.date}</p>
              <p>{item.title}</p>
-             <a href= {"xeberler/" + index}> <button>Detailed</button></a>
             </div>
+            </a>
               
             );
           })}

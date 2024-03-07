@@ -21,10 +21,11 @@ export default function App() {
      {currentTableData.map((item, index) => {
             return (
             <div key={index} className = "news_card">
-              <img src={item.img}></img>
-             <p>{item.date}</p>
-             <p>{item.title}</p>
-             <a href= {"vakansiyalar/" + index}> <button>Detailed</button></a>
+                <div className='news_card_top'>
+                <p>{item.title}</p>
+               <p>{item.date}</p>
+                </div>
+             <a style={{color: 'orange', textDecoration:'underline'}} href= {"vakansiyalar/" + index}> <p>Ətraflı</p></a>
             </div>
               
             );

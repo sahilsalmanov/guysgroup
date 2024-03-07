@@ -3,98 +3,278 @@
     margin: 0 auto;
 }
 .about {
-    width: 50%;
-    background-color: blueviolet;
+    width: 55%;
     margin: 0 auto;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about h3 {
+    font-size: 52px;
+    text-align: center;
+}
+.about p {
+    font-size: 20px;
+    text-align: center;
 }
 .training_container {
     margin: 0 auto;
-    background-color: salmon;
-    margin-top: 30px;
+    margin-top: 80px;
+    text-align: center;
+}
+.btn_left {
+    background-color: rgb(245,245,245);
+    border-radius: 12px;
+    height: 48px;
+    border: none;
+    font-size: 16px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.btn_right {
+    background-color: rgb(245,245,245);
+    border-radius: 12px;
+    height: 48px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+.active_btn {
+background-color: rgb(237, 134, 29);
+border-radius: 12px;
+height: 48px;
+border: none;
+font-size: 16px;
+margin-right: 20px;
+cursor: pointer;
 }
 .trainings {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 40px;
+}
+.trainings a {
+    text-decoration: none;
 }
 .train {
     height: 404px;
     width: 389px;
     border: 1px solid black;
     margin-bottom: 20px;
+    text-align: left;
+    background-color: rgb(245,245,245);
+    border-radius: 10px;
+    color: black;
+    border: none;
+}
+.train h3 {
+    margin-left: 10px;
+}
+.train p {
+    margin-left: 10px;
 }
 .services {
     display: flex;
-    background-color: skyblue;
     justify-content: space-between;
+    margin-top: 40px;
 }
 .left_services {
   width: 377px;
-  background-color: darksalmon;
+}
+.left_services p {
+    font-size: 16px;
+    line-height: 28px;
+}
+.left_services button {
+    background-color: #ED861D;
+    border-radius: 12px;
+    cursor: pointer;
+    height: 52px;
+    width: 185px;
+    margin-top: 20px;
+    border: none;
 }
 .right_services {
     width: 794px;
     display: flex;
     flex-wrap: wrap;
-    background-color: seagreen;
     justify-content: space-between;
+}
+.right_services a {
+    text-decoration: none;
+    color: black;
 }
 .services_each {
     width: 385px;
     height: 176px;
     border: 1px solid white;
-    background-color: darkblue;
     margin-bottom: 20px;
+    border-radius: 12px;
+    background-color: rgb(245,245,245);
 }
+.service_container {
+    width: 80%;
+    margin: 0 auto;
+}
+.service_each_header {
+    display: flex;
+    margin-top: 20px;
+}
+.service_each_header img {
+    width: 44px;
+    height: 44px;
+    margin-right: 20px;
+    margin-top: 8px;
+}
+
 .subscribe {
     display: flex;
-    background-color: slategrey;
+    background-color: #F5F5F5;
+    ;
     margin-top: 200px;
     height: 240px;
 
 }
 .subscribe_left {
     margin-right: 20px;
-    background-color: saddlebrown;
 }
 .subscribe_left img {
-   height: 240px;
+   height: 240px; 
+   width: 400px;/* İmgenin yüksekliği */
 }
 .subscribe_right {
     width: 508px;
     height: 152px;
     border: 1px solid white;
-    background-color: seagreen;
     height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    line-height: 28px;
+    font-size: 20px;
+    border: none;
     
 }
-.news {
-    background-color: aqua;
+.subscribe_right input {
+    width: 342px;
+    height: 56px;
+    border-radius: 12px;
+    border: 1px solid #E6E6E6;
+    margin-right: 10px;
+}
+
+
+.subscribe_right button {
+    height: 56px;
+    width: 128px;
+    border-radius: 12px;
+    background-color: #ED861D;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
 }
 .videonews {
     margin-top: 100px;
+    background-color: silver;
+    background-image: url(../../public/bluebackground.png);
+    border-radius: 12px;
+
+}
+.videonews_container {
+    width: 90%;
     display: flex;
     height: 540px;
-    background-image: url(../../public/bluebackground.png);
-
+    margin: 0 auto;
+}
+.video_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+.video_left button {
+    height: 52px;
+    width: 206px;
+    background-color: #ED861D;
+    border-radius: 12px;
+    border: none;
+    margin-top: 30px;
 }
 .ornament {
    position: relative;
    bottom: 800px;
 }
 .question {
-    height: 300px;
-    background-color: saddlebrown;
+    height: 200px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.question_top h1 {
+    display: flex;
+    justify-content: center;
+}
+.question_btn1 {
+    height: 48px;
+    border-radius: 12px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+}
+.question_btn2 {
+    height: 48px;
+    border-radius: 12px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+}
+.question_btn3 {
+    height: 48px;
+    border-radius: 12px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+}
+.question_btn4 {
+    height: 48px;
+    border-radius: 12px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+}
+.active_btn_question {
+        background-color: rgb(237, 134, 29);
+        border-radius: 12px;
+        height: 48px;
+        border: none;
+        font-size: 16px;
+        margin-right: 10px;
+        cursor: pointer;
+        border: none;
+        
 }
 .questions {
-    width: 60%;
-    background-color: seagreen;
+    width: 70%;
     margin: 0 auto;
 }
 .hidden {
     background-color: #F5F5F5;
-    border-radius: 20px;
+    border-radius: 8px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+}
+.hidden_text {
+    margin-left: 30px;
+}
+.hidden_icon {
+    margin-right: 20px;
 }

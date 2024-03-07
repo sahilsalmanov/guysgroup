@@ -1,10 +1,13 @@
 "use client"
+/* eslint-disable */
+
 import { useMemo, useState } from "react";
 import data from '../data.json';
 import "./pageid.css"
 import Header from '../../../components/Header/Header'
 import Footer from '../../../components/Footer/Footer'
 import OnlySlider from "../OnlySlider";
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 
 export default function Home({params}) {
@@ -26,7 +29,7 @@ export default function Home({params}) {
     <div className="container">
       
      <Header></Header>
-    
+     <p className="routing_show">Ana səhifə <AiOutlineArrowRight /> Bloglar <AiOutlineArrowRight /> {blog.title} </p>
      <div className="blog_section">
       <div className="blog_section_left">
       <OnlySlider></OnlySlider>
@@ -36,19 +39,19 @@ export default function Home({params}) {
           <h4>Paylas</h4>
       </div>
       <div className="blog_section_right">
-     <h2>Diger xeberler</h2>
+     <h2>Maraqlı bloglar</h2>
      {data.map((item) => (
     item.id != blogId && (
-      <a key={item.id} href={'/blog/' + item.id}>
+      <a  key={item.id} href={'/blog/' + item.id}>
         <div className="other_blog" key={item.id}>
+        <p>{item.date}</p>
     <p>{item.title}</p>
-    <p>{item.date}</p>
     </div>
       </a>
     )
 ))}
 
-   <a href="/blog">  <button>Butun xeberler</button></a>
+   <a href="/blog">  <button>Bütün bloglar</button></a>
       </div>
     </div>
      <Footer></Footer>

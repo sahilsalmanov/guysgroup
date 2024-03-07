@@ -6,3 +6,25 @@
     display: flex;
     justify-content: space-between;
 }
+.communication_left {
+    width: 30%;
+    background-color: rgb(245, 245,245);
+    border-radius: 12px;
+}
+.communication_right {
+    width: 62%;
+    background-color: rgb(245, 245,245);
+    text-align: center;
+}
+.communication_right input {
+    height: 52px;
+    width: 400px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+.communication_right button {
+    height: 52px;
+    width: 400px;
+    background-color: orange;
+    border-radius: 12px;
+}

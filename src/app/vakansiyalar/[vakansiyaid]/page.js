@@ -1,9 +1,12 @@
 "use client"
+/* eslint-disable */
+
 import { useMemo, useState } from "react";
 import data from '../data.json';
 import "./pageid.css"
 import Header from '../../../components/Header/Header'
 import Footer from '../../../components/Footer/Footer'
+import { AiOutlineArrowRight } from "react-icons/ai";
 import OnlySlider from "../OnlySlider";
 
 
@@ -26,15 +29,14 @@ export default function Home({params}) {
     <div className="container">
       
      <Header></Header>
-    
+     <p className="routing_show">Ana səhifə <AiOutlineArrowRight /> Vakansiyalar <AiOutlineArrowRight /> {vakansiya.title} </p>
      <div className="vakansiya_section">
       <div className="vakansiya_section_left">
-          <h3>{vakansiya.date}</h3>
           <h1>{vakansiya.title}</h1>
           <p>{vakansiya.text}</p>
       </div>
       <div className="vakansiya_section_right">
-    <h1>Komandamiza qosulmaga hazirsan?</h1>
+    <h2>Komandamiza qosulmaga hazirsan?</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas iaculis enim eget sollicitudin finibus. Aliquam consequat, tortor sed mollis posuer</p>
     <button>Emaili gonder</button>
       </div>

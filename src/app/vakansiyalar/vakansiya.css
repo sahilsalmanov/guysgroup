@@ -6,12 +6,16 @@
     margin: 0 auto;
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: saddlebrown;
+    justify-content: space-between;
 }
 .news_card {
-    background-color: blue;
-    height: 374px;
-    width: 286px;
+    height: 120px;
+    width: 597px;
     margin-bottom: 20px;
+    background-color: rgb(245,245,245);
+    border-radius: 12px;
+}
+.news_card_top {
+    display: flex;
+    justify-content: space-between;
 }

@@ -1,13 +1,39 @@
 .footer {
     height: 300px;
     margin: 0 auto;
-    background-color: brown;
+   
+    margin-top: 80px;
 }
 .footer_top {
     display: flex;
-    justify-content: space-around;
     height: 250px;
 }
-.footer_row {
-    background-color: skyblue;
+.footer_top .item1 {
+width: 400px;
+
 }
+.footer_top .item2 {
+ width: 170px;
+
+    }
+    .footer_top .item3 {
+        width: 170px;
+
+           }
+           .footer_top .item4 {
+            width: 170px;
+        
+               }
+               .footer_top .item5 {
+                width: 185px;
+         
+                   }
+                   .footer_top .item6 {
+                    width: 170px;
+                    
+                       }
+.footer_bottom {
+    display: flex;
+    justify-content: end;
+}
+

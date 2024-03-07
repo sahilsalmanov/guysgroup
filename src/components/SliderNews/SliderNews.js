@@ -1,14 +1,21 @@
+/* eslint-disable */
+
 import React from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import './SliderNews.css';
+import data from '../../app/xeberler/data.json'
 
 function SliderNews() {
+
+  const slider = React.useRef(null);
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     prevArrow: <CustomPrevArrow />,
     nextArrow: <CustomNextArrow />
@@ -17,7 +24,7 @@ function SliderNews() {
   function CustomPrevArrow(props) {
     const { onClick } = props;
     return (
-      <button style={{backgroundColor:'red'}} className="slick-prev" onClick={onClick}>
+      <button style={{backgroundColor:'black'}} className="slick-prev" onClick={onClick}>
         Previous
       </button>
     );
@@ -26,7 +33,7 @@ function SliderNews() {
   function CustomNextArrow(props) {
     const { onClick } = props;
     return (
-      <button style={{backgroundColor:'red'}}  className="slick-next" onClick={onClick}>
+      <button style={{backgroundColor:'black'}}  className="slick-next" onClick={onClick}>
         Next
       </button>
     );
@@ -34,66 +41,31 @@ function SliderNews() {
 
   return (
     <div className="news">
-    <h1>Xəbərlər</h1>
-    <div className='w-3/4 m-auto'>
-      <div className="mt-20">
-        <Slider {...settings}>
-          {data.map((d) => (
-            <div key={d.name} className="bg-white h-[450px] text-black rounded-xl">
-              <div className='h-56 bg-indigo-500 flex justify-center items-center rounded-t-xl'>
-                <img src={d.photo} alt="" className="h-44 w-44 rounded-full"/>
-              </div>
+      <div className='w-3/4 m-auto'>
+        <div className="mt-20">
+          <Slider ref={slider} {...settings}>
+            {data.map((d) => (
+              <a key={d.title} href='/xeberler'>
+                <div  key={d.title} className="slider_container">
+                <div className='slider_image'>
+                  <img src={d.img}  className="h-44 w-44 rounded-full"/>
+                </div>
 
-              <div className="flex flex-col items-center justify-center gap-4 p-4">
-                <p className="text-xl font-semibold">{d.date}</p>
-                <p className="text-center">{d.text}</p>
+                <div className="slider_text">
+                  <p className="text-xl font-semibold">{d.date}</p>
+                  <p className="text-center">{d.title}</p>
+                </div>
               </div>
-            </div>
-          ))}
-        </Slider>
+              </a>
+            ))}
+          </Slider>
+        </div>
       </div>
-    </div>
-    <button>Bütün xəbərlər</button>
+      <a href='/xeberler'><button className='all_btn' >Bütün xəbərlər</button></a>
     </div>
   );
 }
 
-const data = [
-  {
-    photo: "./news.png",
-    date: "22.05.2023",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-  },
-  {
-    photo: "./news.png",
-    date: "22.05.2023",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-  },
-  {
-    photo: "./news.png",
-    date: "22.05.2023",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-  },
-  {
-    photo: "./news.png",
-    date: "22.05.2023",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-  },
-  {
-    photo: "./news.png",
-    date: "22.05.2023",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-  },
-  {
-    photo: "./news.png",
-    date: "22.05.2023",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-  },
-  {
-    photo: "./news.png",
-    date: "22.05.2023",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-  },
-];
+
 
 export default SliderNews;

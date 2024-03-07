@@ -8,13 +8,22 @@
 }
 .blog_section_left {
     width: 56%;
-    background-color: red;
+    margin-top: 30px;
 }
 .blog_section_right {
     width:27%;
-    background-color: green;
+}
+.blog_section_right button {
+    height: 52px;
+    width: 100%;
+    border-radius: 12px;
+}
+.blog_section_right a {
+    text-decoration: none;
 }
 .other_blog {
     background-color: gray;
     cursor: pointer;
+    border-radius: 12px;
+    color: black;
 }

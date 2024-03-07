@@ -7,14 +7,22 @@
     justify-content: space-between;
 }
 .news_section_left {
-    width: 56%;
-    background-color: red;
+    width: 65%;
 }
 .news_section_right {
     width:27%;
-    background-color: green;
+}
+.news_section_right a {
+    text-decoration: none;
 }
 .other_news {
-    background-color: gray;
+    background-color: rgb(245,245,245);
     cursor: pointer;
+    border-radius: 12px;
+    color: black;
+}
+.all_news {
+    width: 100%;
+    border-radius: 12px;
+    height: 52px;
 }

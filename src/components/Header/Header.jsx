@@ -1,43 +1,45 @@
-
+/* eslint-disable */
 import React from 'react'
 import "./Header.css"
 import Link from 'next/link'
+import Image from "next/image.js";
+
 
 const header = () => {
   return (
      
       <nav>
         <div className="nav_left">
-  <img src="/./logo.png" alt="" />
+  <img src="/./logo.png" alt="logo" /><img/>
         </div>
         <div className="nav_middle">
       <ul>
         <li>
-        <Link href="/">Ana sehife</Link>
+        <Link className='nav_link' href="/">Ana səhifə</Link>
         </li>
         <li>
-        <Link href="/haqqimizda">Haqqimizda</Link>
+        <Link className='nav_link' href="/haqqimizda">Haqqımızda</Link>
         </li>
         <li>
-        <Link href="/telimlerimiz">Telimlerimiz</Link>
+        <Link className='nav_link' href="/telimlerimiz">Təlimlərimiz</Link>
         </li>
         <li>
-        <Link href="/xidmetlerimiz">XIdmetlerimiz</Link>
+        <Link className='nav_link' href="/xidmetlerimiz">Xidmətlərimiz</Link>
         </li>
         <li>
-        <Link href="/korporativ">Korporativ</Link>
+        <Link className='nav_link' href="/korporativ">Korporativ</Link>
         </li>
         <li>
-        <Link href="/blog">Blog</Link>
+        <Link className='nav_link' href="/blog">Blog</Link>
         </li>
         <li>
-        <Link href="/vakansiyalar">Vakansiyalar</Link>
+        <Link className='nav_link' href="/vakansiyalar">Vakansiyalar</Link>
         </li>
         <li>
-        <Link href="/xeberler">Xeberler</Link>
+        <Link className='nav_link' href="/xeberler">Xəbərlər</Link>
         </li>
         <li>
-        <Link href="/elaqe">Elaqe</Link>
+        <Link className='nav_link' href="/elaqe">Əlaqə</Link>
         </li>
       </ul>
         </div>

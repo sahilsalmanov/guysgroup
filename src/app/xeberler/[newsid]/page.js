@@ -1,10 +1,13 @@
 "use client"
+/* eslint-disable */
+
 import { useMemo, useState } from "react";
 import data from '../data.json';
 import "./pageid.css"
 import Header from '../../../components/Header/Header'
 import Footer from '../../../components/Footer/Footer'
 import OnlySlider from "@/app/xeberler/OnlySlider";
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 
 export default function Home({params}) {
@@ -26,7 +29,7 @@ export default function Home({params}) {
     <div className="container">
       
      <Header></Header>
-    
+     <p className="routing_show">Ana səhifə <AiOutlineArrowRight /> Xəbərlər <AiOutlineArrowRight /> {news.title} </p>
      <div className="news_section">
       <div className="news_section_left">
       <OnlySlider></OnlySlider>
@@ -36,19 +39,19 @@ export default function Home({params}) {
           <h4>Paylas</h4>
       </div>
       <div className="news_section_right">
-     <h2>Diger xeberler</h2>
+     <h2>Digər xəbərlər</h2>
      {data.map((item) => (
     item.id != newsId && (
       <a key={item.id} href={'/xeberler/' + item.id}>
         <div className="other_news" key={item.id}>
+        <p>{item.date}</p>
     <p>{item.title}</p>
-    <p>{item.date}</p>
     </div>
       </a>
     )
 ))}
 
-<a href="/xeberler">  <button>Butun xeberler</button></a>
+<a href="/xeberler">  <button className="all_news">Bütün xeberler</button></a>
       </div>
     </div>
      <Footer></Footer>
