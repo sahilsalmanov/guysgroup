@@ -3,16 +3,17 @@ import React from 'react'
 import "./Header.css"
 import Link from 'next/link'
 import Image from "next/image.js";
+import { AiFillProfile } from "react-icons/ai";
 
 
 const header = () => {
-  return (
+  return ( 
      
       <nav>
         <div className="nav_left">
   <img src="/./logo.png" alt="logo" /><img/>
         </div>
-        <div className="nav_middle">
+        <div className="nav_middle"> 
       <ul>
         <li>
         <Link className='nav_link' href="/">Ana səhifə</Link>
@@ -42,9 +43,23 @@ const header = () => {
         <Link className='nav_link' href="/elaqe">Əlaqə</Link>
         </li>
       </ul>
+      <div class="dropdown">
+    <button class="dropbtn"><AiFillProfile color='black' size ={30} />
+    </button>
+    <div class="dropdown-content">
+      <a href="/haqqimizda">Haqqımızda</a>
+      <a href="/telimlerimiz">Təlimlərimiz</a>
+      <a href="/xidmetlerimiz">Xidmətlərimiz</a>
+      <a href="/korporativ">Korporativ</a>
+      <a href="/blog">Blog</a>
+      <a href="/vakansiyalar">Vakansiyalar</a>
+      <a href="/xeberler">Xəbərlər</a>
+      <a href="/elaqe">Əlaqə</a>
+    </div>
+       </div> 
         </div>
         <div className="nav_end">
-        <button>Müraciət et</button>
+        <button>Müraciət et</button> 
         </div>
       </nav>
 

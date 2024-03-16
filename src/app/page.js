@@ -2,6 +2,7 @@
 /* eslint-disable */
 
 import Footer from "@/components/Footer/Footer.jsx";
+import React from 'react'
 import Header from "../components/Header/Header.jsx";
 import "./page.css"
 import SliderNews from "../components/SliderNews/SliderNews.js";
@@ -10,71 +11,68 @@ import { useState } from "react";
 import { AiFillCaretDown } from "react-icons/ai";
 import Corporation from "@/components/Corporation/Corporation.js";
 
+const page = () => {
 
-export default function Home() {
-
-
-  const initialData = [
-    { content: "İçerik 1" },
-    { content: "İçerik 2" },
-    { content: "İçerik 3" },
-    { content: "İçerik 4" },
-    { content: "İçerik 5" },
-    { content: "İçerik 6" },
-    { content: "İçerik 7" },
-    { content: "İçerik 8" },
-    { content: "İçerik 9" },
-    { content: "İçerik 10" }
-  ];
-
-  const initialData2 = [
-    { content: "İçerik 1" },
-    { content: "İçerik 2" },
-    { content: "İçerik 3" },
-    { content: "İçerik 4" }
-  ];
-  const initialData3 = [
-    { content: "İçerik 5" },
-    { content: "İçerik 6" },
-    { content: "İçerik 7" },
-  ];
-
-  const initialData4 = [
-    { content: "İçerik 8" },
-    { content: "İçerik 9" },
-    { content: "İçerik 10" }
-  ];
-
-  
-  const [isOpenArray, setIsOpenArray] = useState(new Array(10).fill(false));
-  const [chooseClassname, setchooseClassname] = useState(true)
-  const [chooseClassname2, setchooseClassname2] = useState(0)
-
-  const togglePanel = (index) => {
-    const newArray = [...isOpenArray];
-    newArray[index] = !newArray[index];
-    setIsOpenArray(newArray);
-  };
-
-
-  function handleButtonClick() {
-    setchooseClassname(!chooseClassname)
-  }
-
-  function handleButtonClick2() {
-    setchooseClassname2(0)
-  }
-  function handleButtonClick3() {
-    setchooseClassname2(1)
-  }
-  function handleButtonClick4() {
-    setchooseClassname2(2)
-  }
-  function handleButtonClick5() {
-    setchooseClassname2(3)
-  }
-
-
+    const initialData = [
+        { content: "İçerik 1" },
+        { content: "İçerik 2" },
+        { content: "İçerik 3" },
+        { content: "İçerik 4" },
+        { content: "İçerik 5" },
+        { content: "İçerik 6" },
+        { content: "İçerik 7" },
+        { content: "İçerik 8" },
+        { content: "İçerik 9" },
+        { content: "İçerik 10" }
+      ];
+    
+      const initialData2 = [
+        { content: "İçerik 1" },
+        { content: "İçerik 2" },
+        { content: "İçerik 3" },
+        { content: "İçerik 4" }
+      ];
+      const initialData3 = [
+        { content: "İçerik 5" },
+        { content: "İçerik 6" },
+        { content: "İçerik 7" },
+      ];
+    
+      const initialData4 = [
+        { content: "İçerik 8" },
+        { content: "İçerik 9" },
+        { content: "İçerik 10" }
+      ];
+    
+      
+      const [isOpenArray, setIsOpenArray] = useState(new Array(10).fill(false));
+      const [chooseClassname, setchooseClassname] = useState(true)
+      const [chooseClassname2, setchooseClassname2] = useState(0)
+    
+      const togglePanel = (index) => {
+        const newArray = [...isOpenArray];
+        newArray[index] = !newArray[index];
+        setIsOpenArray(newArray);
+      };
+    
+    
+      function handleButtonClick() {
+        setchooseClassname(!chooseClassname)
+      }
+    
+      function handleButtonClick2() {
+        setchooseClassname2(0)
+      }
+      function handleButtonClick3() {
+        setchooseClassname2(1)
+      }
+      function handleButtonClick4() {
+        setchooseClassname2(2)
+      }
+      function handleButtonClick5() {
+        setchooseClassname2(3)
+      }
+    
   return (
     <>
     <div className="container">
@@ -245,9 +243,6 @@ export default function Home() {
     </div>
     <div className="video_right">
    <img src="./examplephoto.png"></img>
-   {/* <img src="./stickers.png"></img>
-   <img src="./circle.png"></img> */}
-   {/* <img className="ornament" src="./ornament.jpg"></img> */}
     </div>
 
     </div>
@@ -329,5 +324,7 @@ export default function Home() {
     </div>
      
     </>
-  );
+  )
 }
+
+export default page

@@ -1,0 +1,202 @@
+/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/components/Header/Header.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
+nav {
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .nav_middle {
+    display: flex;
+    align-items: center;
+    width: 853px;
+}
+nav .nav_middle ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 16px;
+}
+nav .nav_middle ul li {
+    margin-right:11px;
+    color: black;
+}
+nav .nav_middle .nav_link {
+    color: black;
+    text-decoration: none;
+}
+nav span {
+    display: none;
+}
+nav .nav_end  {
+ display: flex;
+ align-items: center;
+}
+nav .nav_end button {
+    height: 44px;
+    width: 148px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+    display: none;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+   cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+@media only screen and (min-width: 720px) and (max-width: 1280px) {
+    
+
+   
+    
+} 
+@media only screen and (min-width: 340px) and (max-width: 720px) {
+    
+   
+    
+} 
+/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/components/Footer/Footer.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
+.footer {
+    height: 300px;
+    margin: 0 auto;
+   
+    margin-top: 80px;
+}
+.footer_top {
+    display: flex;
+    height: 250px;
+}
+.footer_top .item1 {
+width: 400px;
+
+}
+.footer_top .item2 {
+ width: 170px;
+
+    }
+    .footer_top .item3 {
+        width: 170px;
+
+           }
+           .footer_top .item4 {
+            width: 170px;
+        
+               }
+               .footer_top .item5 {
+                width: 185px;
+         
+                   }
+                   .footer_top .item6 {
+                    width: 170px;
+                    
+                       }
+.footer_bottom {
+    display: flex;
+    justify-content: end;
+}
+
+
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/app/xidmetlerimiz/services.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+.container {
+    width: 84%;
+    margin: 0 auto;
+}
+.sections {
+    display: flex;
+    justify-content: space-between;
+}
+.sections_panel {
+    width: 286px;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+.sections_panel button {
+    height: 52px;
+    width: 286px;
+    background-color: #ED861D;
+    border-radius: 12px;
+    border: none;
+}
+.sections_info {
+    width: 900px;
+}
+.sections_panel .active {
+ background-color: rgb(245,245 ,245);
+
+}
+.sections .section_ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+.sections .section_ul img {
+position: relative;
+top: 5px;
+margin-right: 7px;
+margin-left: 10px;
+}
+.sections .section_ul p {
+    cursor: pointer;
+    height: 52px;
+    width: 286px;
+    border-radius: 12px;
+
+}
+.plan_tedris {
+    width: 202px;
+    height: 44px;
+    border-radius: 12px;
+    border: 1px solid black;
+}
+.telimciler {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
