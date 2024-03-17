@@ -77,7 +77,7 @@ const page = () => {
     <>
     <div className="container">
     <Header></Header>
-    <div className="about">
+    {/* <div className="about">
      <h3>Lorem ipsum dolor sit amy, consectetur</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/-7LevsXbdx8?si=kqTI0IYIY-AWl2XC" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
@@ -320,7 +320,7 @@ const page = () => {
 </div>
     <h1>Tərəfdaşlıq</h1>
     <Corporation/>
-    <Footer></Footer>
+    <Footer></Footer> */}
     </div>
      
     </>

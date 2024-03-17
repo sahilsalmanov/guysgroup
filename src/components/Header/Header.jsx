@@ -11,7 +11,7 @@ const header = () => {
      
       <nav>
         <div className="nav_left">
-  <img src="/./logo.png" alt="logo" /><img/>
+  <img src="/./logo.png" alt="logo" />
         </div>
         <div className="nav_middle"> 
       <ul>
@@ -42,7 +42,7 @@ const header = () => {
         <li>
         <Link className='nav_link' href="/elaqe">Əlaqə</Link>
         </li>
-      </ul>
+      </ul> 
       <div class="dropdown">
     <button class="dropbtn"><AiFillProfile color='black' size ={30} />
     </button>
@@ -59,7 +59,7 @@ const header = () => {
        </div> 
         </div>
         <div className="nav_end">
-        <button>Müraciət et</button> 
+        <button>Müraciət et</button>  
         </div>
       </nav>
 

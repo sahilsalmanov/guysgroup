@@ -11,7 +11,7 @@ const Footer = () => {
       <img src='/./logo.png'></img>
       <p>Baki, Azaro Plaza</p>
       <p>+99400940942</p>
-      <p>guysgroup@gmail.com</p>
+      <p>guysgroup@gmail.com</p> 
     </div>
      <div className='footer_row item2'>
       <h3>Haqqımızda</h3>

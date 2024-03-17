@@ -28,3 +28,48 @@
     background-color: orange;
     border-radius: 12px;
 }
+
+
+@media only screen and (min-width: 720px) and (max-width: 1280px) {
+  
+
+    .communication_left {
+        width: 35%;
+    }
+    .communication_left h1 {
+        font-size: 25px;
+    }
+    .communication_right input {
+      width: 60%;
+    }
+    .communication_right button {
+       width: 60%;
+    }
+    
+} 
+@media only screen and (min-width: 340px) and (max-width: 720px) {
+    .communication {
+        display: block;
+    }
+    .communication h1 {
+        font-size: 20px;
+    }
+    .communication_left {
+        height: 200px;
+        width: 90%;
+        padding: 10px;
+       margin-bottom: 20px;
+    }
+    .communication_right {
+        height: 480px;
+        width: 90%;
+        padding: 10px;
+    }
+    .communication_right input {
+        width: 90%;
+      }
+      .communication_right button {
+         width: 90%;
+      }
+    
+} 

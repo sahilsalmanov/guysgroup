@@ -1,39 +1,94 @@
 .footer {
-    height: 300px;
-    margin: 0 auto;
-   
-    margin-top: 80px;
+  height: 300px;
+  margin: 0 auto;
+  font-size: 14px;
+  margin-top: 80px;
 }
 .footer_top {
-    display: flex;
-    height: 250px;
+  display: flex;
+  height: 250px;
+  justify-content: space-between;
 }
 .footer_top .item1 {
-width: 400px;
-
+  width: 400px;
+  margin-right: 10px;
 }
 .footer_top .item2 {
- width: 170px;
-
-    }
-    .footer_top .item3 {
-        width: 170px;
-
-           }
-           .footer_top .item4 {
-            width: 170px;
-        
-               }
-               .footer_top .item5 {
-                width: 185px;
-         
-                   }
-                   .footer_top .item6 {
-                    width: 170px;
-                    
-                       }
+  width: 170px;
+  margin-right: 10px;
+}
+.footer_top .item3 {
+  width: 170px;
+  margin-right: 10px;
+}
+.footer_top .item4 {
+  width: 170px;
+  margin-right: 10px;
+}
+.footer_top .item5 {
+  width: 185px;
+  margin-right: 10px;
+}
+.footer_top .item6 {
+  width: 170px;
+  margin-right: 10px;
+}
 .footer_bottom {
-    display: flex;
-    justify-content: end;
+  display: flex;
+  justify-content: end;
 }
 
+@media only screen and (min-width: 720px) and (max-width: 1280px) {
+    .footer_top .item1 {
+        width: 300px;
+      }
+      .footer_top .item2 {
+        width: 90px;
+      }
+      .footer_top .item3 {
+        width: 90px;
+      }
+      .footer_top .item4 {
+        width: 90px;
+      }
+      .footer_top .item5 {
+        width: 95px;
+      }
+      .footer_top .item6 {
+        width: 90px;
+      }
+      .footer h3 {
+        font-size: 13px;
+      }
+}
+@media only screen and (min-width: 340px) and (max-width: 720px) {
+    .footer_top .item1 {
+        width: 300px;
+      }
+      .footer_top .item1 p {
+        margin-left: 30px;
+      }
+      .footer_top .item2 {
+        width: 90px;
+        display: none;
+      }
+      .footer_top .item3 {
+        width: 90px;
+        display: none;
+      }
+      .footer_top .item4 {
+        width: 90px;
+        display: none;
+      }
+      .footer_top .item5 {
+        width: 95px;
+        display: none;
+      }
+      .footer_top .item6 {
+        width: 90px;
+        display: none;
+      }
+      .footer h3 {
+        font-size: 13px;
+      }
+}

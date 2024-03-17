@@ -3,7 +3,10 @@ nav {
     display: flex;
     justify-content: space-between;
 }
-
+.nav_left img {
+  width: 160px;
+  height: 90px;
+}
 nav .nav_middle {
     display: flex;
     align-items: center;
@@ -85,13 +88,47 @@ nav .nav_end button {
   }
 
 @media only screen and (min-width: 720px) and (max-width: 1280px) {
-    
+    nav {
+      background-color: chartreuse;
+    }
+    .dropdown {
+      display: block;
+    }
+    nav .nav_middle {
+      width: 70%;
+      display: flex;
+      justify-content: end;
+    }
+    nav .nav_middle ul {
+      display: none;
+    }
 
-   
+
+     
     
 } 
 @media only screen and (min-width: 340px) and (max-width: 720px) {
     
-   
+  .dropdown {
+    display: block;
+  }
+  nav .nav_middle {
+    width: 70%;
+    display: flex;
+    justify-content: end;
+  }
+  nav .nav_middle ul {
+    display: none;
+  }
+  nav .nav_end button {
+    height: 44px;
+    width: 74px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 10px;
+}
+
     
 } 
