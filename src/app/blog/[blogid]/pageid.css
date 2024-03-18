@@ -27,3 +27,33 @@
     border-radius: 12px;
     color: black;
 }
+
+@media only screen and (min-width: 720px) and (max-width: 1280px) {
+  
+    .blog_section {
+        display: block;
+    }
+    .blog_section_right {
+        width: 300px;
+    }
+    .blog_section_right button {
+        width: 300px;
+    }
+   
+    } 
+    @media only screen and (min-width: 340px) and (max-width: 720px) {
+    
+        .blog_section {
+            display: block;
+        }
+        .blog_section_left {
+            width: 100%;
+        }
+        .blog_section_right {
+            width: 300px;
+        }
+        .blog_section_right button {
+            width: 300px;
+        }
+        
+    } 

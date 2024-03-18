@@ -40,7 +40,7 @@ export default function Home({params}) {
       </div>
       <div className="news_section_right">
      <h2>Digər xəbərlər</h2>
-     {data.map((item) => (
+     {data.map((item) => ( 
     item.id != newsId && (
       <a key={item.id} href={'/xeberler/' + item.id}>
         <div className="other_news" key={item.id}>

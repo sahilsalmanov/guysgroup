@@ -10,11 +10,13 @@
     width: 30%;
     background-color: rgb(245, 245,245);
     border-radius: 12px;
+    padding-left: 20px;
 }
 .communication_right {
     width: 62%;
     background-color: rgb(245, 245,245);
     text-align: center;
+    border-radius: 12px;
 }
 .communication_right input {
     height: 52px;

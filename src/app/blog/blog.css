@@ -14,3 +14,17 @@
     width: 286px;
     margin-bottom: 20px;
 }
+
+
+@media only screen and (min-width: 720px) and (max-width: 1280px) {
+  
+
+    
+} 
+@media only screen and (min-width: 340px) and (max-width: 720px) {
+   
+    .news_section {
+        justify-content: start;
+    }
+    
+} 

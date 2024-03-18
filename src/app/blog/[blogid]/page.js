@@ -51,7 +51,7 @@ export default function Home({params}) {
     )
 ))}
 
-   <a href="/blog">  <button>Bütün bloglar</button></a>
+   <a href="/blog">  <button className="all_blogs">Bütün bloglar</button></a>
       </div>
     </div>
      <Footer></Footer>

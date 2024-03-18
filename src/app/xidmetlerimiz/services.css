@@ -54,3 +54,47 @@ margin-left: 10px;
     justify-content: space-around;
     text-align: center;
 }
+
+
+@media only screen and (min-width: 720px) and (max-width: 1280px) {
+  
+    .sections_panel {
+        width: 30%;
+    }
+    .sections_panel button {
+        width: 100%;
+    }
+    
+    .sections_info {
+        width: 70%;
+    }
+    .sections .section_ul p {
+        width: 100%;
+    }
+        
+    } 
+    @media only screen and (min-width: 340px) and (max-width: 720px) {
+       
+        .sections {
+            display: block;
+        }
+    
+        .sections_panel {
+            width: 300px;
+        }
+        .sections_panel button {
+            width: 300px;
+        }
+        
+        .sections_info {
+            width: 100%;
+        }
+        .sections .section_ul p {
+            width: 300px;
+        }
+        .telimciler {
+            display: block;
+            justify-content: start;
+        }
+        
+    } 

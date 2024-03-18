@@ -19,3 +19,16 @@ background-color: rgb(245,245,245);
     margin-bottom: 20px;
     color: black;
 }
+
+@media only screen and (min-width: 720px) and (max-width: 1280px) {
+  
+
+    
+} 
+@media only screen and (min-width: 340px) and (max-width: 720px) {
+   
+    .news_section {
+        justify-content: start;
+    }
+    
+} 
