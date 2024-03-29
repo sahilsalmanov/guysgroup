@@ -50,7 +50,7 @@ export default function Home() {
      </div>
      <div>
       <img src="./orange.png"></img>
-     </div>
+     </div> 
      </div>
      <div className="organizations">
      <h1>Təlim və tədbirlərdən</h1>

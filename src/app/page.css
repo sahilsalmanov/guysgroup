@@ -290,10 +290,41 @@ cursor: pointer;
     .about h3 {
         font-size: 45px;
     }
+    .right_services {
+        justify-content: end;
+    }
     
     
 } 
 
 @media only screen and (min-width: 340px) and (max-width: 720px) {
    
+
+    .about {
+        width: 80%;
+        background-color: saddlebrown;
+    }
+    .about h3 {
+        font-size: 45px;
+    }
+    .about iframe {
+        width: 300px;
+    }
+    .about {
+        width: 80%;
+        background-color: saddlebrown;
+    }
+    .about h3 {
+        font-size: 45px;
+    }
+    .services {
+        display: block;
+    }
+    .left_services {
+        margin-bottom: 20px;
+    }
+    .right_services {
+        display: block;
+        justify-content: end;
+    }
 }  
